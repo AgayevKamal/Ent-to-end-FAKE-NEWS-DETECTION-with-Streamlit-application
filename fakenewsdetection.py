@@ -22,12 +22,10 @@ def main():
             prediction = model.predict([news_text])[0]
             
             # Display the prediction
-            if prediction == 0:
+            if prediction == '0':
                 st.write("The news article is predicted to be fake.")
             else:
-                st.write("The news article is predicted to be genuine.")
-        else:
-            st.write("Please enter a news article.")
+                st.write("The news article is predicted to be real.")
 
 # Run the app
 if __name__ == "__main__":
